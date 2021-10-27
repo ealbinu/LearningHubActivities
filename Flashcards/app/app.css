@@ -91,7 +91,7 @@ body {
 }
 @media (max-width: 600px) {
   .flipcard {
-    height: 240px;
+    height: 260px;
   }
 }
 .flipcard .front,
@@ -146,6 +146,12 @@ body {
 .flipcard.notactive .back div,
 .flipcard.notactive .button {
   display: none;
+}
+@media (max-width: 600px) {
+  .flipcard.notactive {
+    width: 30px;
+    height: 30px;
+  }
 }
 .material-icons-two-tone {
   color: var(--main);

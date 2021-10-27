@@ -76,7 +76,8 @@ body{
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: #f4f4f4d;    
+    background: #f4f4f4d;
+    
 }
 
 
@@ -90,7 +91,8 @@ body{
     position: relative;
     margin: 2px;
     @media (max-width:600px){
-        height: 240px;
+        height: 260px;
+        
     }
     .front, .back{
         position: absolute;
@@ -129,6 +131,10 @@ body{
         height: 60px;
         .front div, .back div, .button{
             display: none;
+        }
+        @media (max-width:600px){
+            width: 30px;
+            height: 30px;
         }
     }
 }
