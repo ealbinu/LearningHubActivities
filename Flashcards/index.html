@@ -31,7 +31,7 @@
       </div>
     </div>
     <script type="text/x-template" id="flipcard">
-      <div class="flipcard" :class="active?'active animate__animated animate__pulse':'notactive'" @click="$emit('clicked')">
+      <div class="flipcard" :class="active?'active animate__animated animate__zoomIn':'notactive'" @click="$emit('clicked')">
         <transition-group tag="div" enter-active-class="animate__animated  animate__flipInY" leave-active-class="animate__animated animate__flipOutY">
           <div class="front" v-if="isfront">
             <div ref="cardFront">{{fronttext}}</div>

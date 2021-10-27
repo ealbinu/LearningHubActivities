@@ -37,7 +37,7 @@ html(lang="es")
 
 
         script(type="text/x-template" id="flipcard")
-            .flipcard(:class="active?'active animate__animated animate__pulse':'notactive'" @click="$emit('clicked')")
+            .flipcard(:class="active?'active animate__animated animate__zoomIn':'notactive'" @click="$emit('clicked')")
                 transition-group(
                     tag="div"
                     enter-active-class="animate__animated  animate__flipInY"

@@ -79,7 +79,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 90%;
   background: #f4f4f4d;
 }
 .flipcard {
@@ -148,9 +148,9 @@ body {
   display: none;
 }
 @media (max-width: 600px) {
-  .flipcard.notactive {
-    width: 30px;
-    height: 30px;
+  .flipcard.active {
+    position: absolute;
+    z-index: 80;
   }
 }
 .material-icons-two-tone {
