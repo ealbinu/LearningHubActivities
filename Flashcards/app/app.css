@@ -82,6 +82,11 @@ body {
   height: 90%;
   background: #f4f4f4d;
 }
+@media (max-width: 600px) {
+  #container .row {
+    align-items: flex-start;
+  }
+}
 .flipcard {
   float: left;
   width: 300px;
@@ -151,6 +156,7 @@ body {
   .flipcard.active {
     position: absolute;
     z-index: 80;
+    margin-top: 10%;
   }
 }
 .material-icons-two-tone {
