@@ -1,0 +1,123 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/css/buttons.min.css")
+        link(rel="stylesheet", href="app/app.css")
+
+        title Semblanza de empresa ToiJugando
+    body
+        #app
+            #startDialog
+                dialogo(v-slot="props" v-if="startDialog" @close="startDialog=false")
+                    img(src="app/img/learninghub.png", alt="Learning Hub").logolh
+                    .descriptiontoi
+                        img(src="app/img/toijugando-horizontal.png", alt="TOiJugando")
+                        p Con este documento podrás entender cómo se compone de forma específica por cada área la empresa de juguetes artesanales #[strong ToiJugando].
+                    button(@click="props.close").button.button-glow.button-highlight.button-pill.button-large Iniciar
+            #container
+                
+                div.text-center: img(src="app/img/toijugando-horizontal.png", alt="TOiJugando").logotj
+                .row
+                    popup(button="Descripción general")
+                        div #[strong ToiJugando] es una pequeña empresa mexicana fundada en 1980 dedicada a la producción y venta de juguetes de madera con un toque mexicano.
+                    popup(button="Misión")
+                        div Promover en todos los rincones del país los juguetes emblemáticos de la cultura mexicana.
+                    popup(button="Estructura")
+                        div La empresa está constituida por 22 personas en tres áreas diferentes,
+                            br
+                            | 1 Dirección de diseño con 3 colaboradores
+                            br
+                            | 1 Dirección de producción con 10 colaboradores
+                            br
+                            | 1 Dirección de administración con 5 colaboradores
+                            br
+                            | y por último 1 directora general.
+                    popup(button="Ubicación")
+                        div Empresa localizada en Zapopan Jalisco, la fábrica se encuentra en una bodega de 800m2 (40m x 20m) dentro de un parque industrial.
+                    popup(button="Área de diseño")
+                        ul
+                            li 3 cubículos para los diseñadores.
+                            li 3 computadoras de escritorio.
+                            li Mesa de trabajo para realizar nuevos diseños a mano.
+                            li 1 oficina para dirección.
+
+                    popup(button="Área de ventas")
+                        ul
+                            li 5 cubículos para los colaboradores.
+                            li 5 computadoras portátiles.
+                            li 2 vehículos tipo sedán.
+                            li 1 camioneta pick up para entregas.
+                            li 1 oficina para dirección.
+
+                    
+                    popup(button="Área de producción")
+                        .row
+                            popup(button="Producción de madera")
+                                ul
+                                    li 3 tornos de madera.
+                                    li 3 herramientas de corte.
+                                    li 3 mesas de trabajo y corte.
+                                    li 1 Sierra.
+                                    li 1 router.
+                                    li Martillos, lijadoras, taladros, cepillos, etc.
+                            popup(button="Producción de plásticos")
+                                ul
+                                    li Maquina de inyección de plásticos de 30g.
+                            popup(button="Producción textil")
+                                ul
+                                    li 3 maquinas de coser.
+                                    li 2 mesas de trabajo pequeñas de tratado textil.
+                            popup(button="Acabados")
+                                ul
+                                    li 2 mesas de trabajo para acabados. 
+                            popup(button="Dirección")
+                                ul
+                                    li 1 oficina para director de producción.
+                    popup(button="Áreas extras")
+                        ul
+                            li 1 bodega para almacenar juguetes fabricados.
+                            li 1 almacén de materiales y consumibles.
+                            li 1 cocina y comedor.
+                            li 1 sala de juntas.
+                            li 1 área de descanso.
+                            li 1 oficina para director general.
+
+
+                    
+
+
+        
+            
+        script(type="text/x-template" id="popup")
+            button(@click="openDialog").button.button-glow.button-highlight.button-rounded {{button}}
+            transition(
+                enter-active-class="animate__animated animate__jackInTheBox"
+                leave-active-class="animate__animated animate__slideOutDown"
+                )
+                .popup(v-if="dialog")
+                    .popupContent
+                        button(@click="closeDialog").button.button-highlight.button-glow.button-border.button-circle.animate__animated.animate__heartBeat: span.material-icons close
+                        div
+                            h2 {{button}}
+                            slot
+
+        script(type="text/x-template" id="dialog")
+            .lhDialog
+                transition(
+                    leave-active-class="animate__animated animate__zoomOut animate__slow"
+                    @after-leave="$emit('close')"
+                    )
+                    .lhDialogContent(v-if="dialogContent")
+                        slot(v-bind:close="closeDialog")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        script(src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js")
+        script(src="app/app.js")

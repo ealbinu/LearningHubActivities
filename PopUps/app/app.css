@@ -1,0 +1,167 @@
+:root {
+  --main: #FBC503;
+  --sec: #EF8E32;
+  --dark: #575756;
+  --light: #F6F6F6;
+}
+/*-------*/
+.centerize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roundize {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+/*-------*/
+* {
+  padding: 0 ;
+  margin: 0;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lhDialog {
+  z-index: 99;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.1);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lhDialog img {
+  width: 90%;
+  max-width: 480px;
+}
+.lhDialog .lhDialogContent {
+  width: 80%;
+  height: 80%;
+  background: #f0f0f0;
+  background-image: url(img/connections.svg) !important;
+  background-size: 140%;
+  background-position: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#startDialog .logolh {
+  max-width: 240px;
+}
+#startDialog .descriptiontoi {
+  text-align: center;
+  background: #fff;
+  padding: 10px 20px;
+  max-width: 480px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+#startDialog .descriptiontoi img {
+  max-width: 280px;
+}
+#container {
+  width: 98%;
+  height: 98%;
+  max-width: 892px;
+  max-height: 392px;
+  position: relative;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#container .row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  background: #f4f4f4d;
+  flex-wrap: wrap;
+}
+#container .row .button {
+  margin: 4px;
+}
+.text-center {
+  text-align: center;
+  margin: 10px;
+}
+.logotj {
+  max-width: 200px;
+}
+.popup {
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup .popupContent {
+  max-width: 640px;
+  max-height: 380px;
+  width: 80%;
+  height: 80%;
+  background: #f0f0f0;
+  background-image: url(img/connections.svg) !important;
+  background-size: 140%;
+  background-position: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+.popup .popupContent > div {
+  padding: 10px;
+  max-width: 90%;
+}
+.popup .popupContent .button-circle {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+.button-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-border-thick.button-plain:focus,
+.button-border-thick.button-plain:hover,
+.button-border-thin.button-plain:focus,
+.button-border-thin.button-plain:hover,
+.button-border.button-plain:focus,
+.button-border.button-plain:hover,
+.button-plain.button-border-thick:focus,
+.button-plain.button-border-thick:hover,
+.button-plain.button-border-thin:focus,
+.button-plain.button-border-thin:hover {
+  color: var(--sec);
+}
+/*# sourceMappingURL=app.css.map */
