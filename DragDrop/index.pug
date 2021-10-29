@@ -1,0 +1,100 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/css/buttons.min.css")
+        
+        link(rel="stylesheet", href="https://unpkg.com/simplebar-vue@1.6.8/dist/simplebar.min.css")
+        
+        link(rel="stylesheet", href="app/app.css")
+
+        title Semblanza de empresa ToiJugando
+    body
+        #app
+            #startDialog
+                dialogo(v-slot="props" v-if="startDialog" @close="startDialog=false")
+                    img(src="app/img/learninghub.png", alt="Learning Hub")
+                    button(@click="props.close").button.button-glow.button-highlight.button-pill.button-large Iniciar
+            #container
+
+                transition(
+                    leave-active-class="animate__animated animate__lightSpeedOutLeft"
+                )
+                    .instructions(v-if="instructions")
+                        div.text-center: img(src="app/img/toijugando-horizontal.png", alt="TOiJugando").logotj
+                        p El mes pasado llegó un pedido grande de juguetes para una feria importante de Michoacan a la empresa #[strong ToiJugando], después de varias dificultades en el proceso de producción y una entrega después de la fecha límite, tú asumiendo el rol de director general decidiste hacer un análisis de las problematicas y posibles soluciones para eficiantar procesos internos, pero sobre todo para tener más control en ciertos aspectos de la empresa utilizando tecnologías propias de la #[strong Industria 4.0].
+                        
+                        .text-center.inst
+                            p.grey Arrastra la posible solución a la problemática correspondiente.   
+                            button(@click="hideInstructions").button.button-glow.button-highlight.button-rounded Comenzar
+
+
+
+
+
+                .row(v-if="!instructions").droparea
+
+                        .questions(:class="oks==5?'end':''")
+                            .text-center(v-if="oks==5"): img(src="app/img/toijugando-horizontal.png", alt="Toi Jugando").logotj 
+                            .wrap
+                                template(v-for="(i, index) in quest" )
+                                    transition(
+                                        enter-active-class="animate__animated animate__bounceIn"
+                                        leave-active-class="animate__animated animate__zoomOut"
+                                    )
+                                        .quest(v-show="index==slide" :class="oks==5?'end':''")
+                                            .q {{i.t}}
+                                            .draggables.dropzone(:data="index")
+                            .navigation
+                                button(@click="move('l')" :disabled="slide==0").button.button-highlight.button-border.button-circle.button-small.button-glow.left: span.material-icons arrow_back
+                                div.dots
+                                    template(v-for="(i, index) in quest"): .dot(:class="index==slide?'active':'non'")
+                                button(@click="move('r')" :disabled="slide==4").button.button-highlight.button-border.button-circle.button-small.button-glow.right: span.material-icons arrow_forward
+                            
+
+
+                        .options(data-simplebar data-simplebar-auto-hide="false" :class="dragging?'dragging':''" v-if="oks<5")
+                            
+                            .draggables.opzone
+                                template(v-for="(i, index) in items")
+                                    .drag(:data="i.id") {{i.t}}
+                        
+                            //.dropzone
+
+
+
+                    
+
+
+        
+            
+        
+
+        script(type="text/x-template" id="dialog")
+            .lhDialog
+                transition(
+                    leave-active-class="animate__animated animate__zoomOut animate__slow"
+                    @after-leave="$emit('close')"
+                    )
+                    .lhDialogContent(v-if="dialogContent")
+                        slot(v-bind:close="closeDialog")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        script(src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js")
+        //script(type="module" src="https://unpkg.com/smooth-dnd@0.12.1/dist/index.js")
+        script(src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.12/lib/draggable.bundle.js")
+
+        script(src="https://unpkg.com/simplebar@5.3.6/dist/simplebar.min.js")
+        
+        
+        script(src="app/app.js")
+
+
+           
