@@ -22,11 +22,11 @@ const app = Vue.createApp({
 
         
         const quest = ref([
-            {id:0, t:'Durante el último mes el personal estuvo llegando tarde, saliendo temprano y tomando más tiempo de lo debido para la comida lo que retrasó notablemente la producción.'},
-            {id:1, t:'La materia prima que tenían en almacen no fue suficiente para la producción y el personal se dió cuenta muy tarde, lo cual retrasó la producción..'},
             {id:2, t:'La maquina de inyección de plástico se descompuso ya que una de las piezas se sobrecalentó y durante el tiempo que se tardaron en repararla se paró completamente la producción.'},
+            {id:1, t:'La materia prima que tenían en almacen no fue suficiente para la producción y el personal se dió cuenta muy tarde, lo cual retrasó la producción..'},
             {id:3, t:'El gasto de energía electrica se elevó bastante durante los últimos 3 meses, lo cual causó falta de flujo en efectivo para resurtir materiales.'},
             {id:4, t:'La camioneta en la que se repartían los juguetes sufrió una avería en el motor a la mitad del camino.'},
+            {id:0, t:'Durante el último mes el personal estuvo llegando tarde, saliendo temprano y tomando más tiempo de lo debido para la comida lo que retrasó notablemente la producción.'},
         ])
         
         
@@ -45,7 +45,7 @@ const app = Vue.createApp({
                 startDraggable()
             }, 500)
         }
-        hideInstructions()
+        //hideInstructions()
 
         const startDraggable = () => {
             
