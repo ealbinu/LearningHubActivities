@@ -11,8 +11,8 @@ const app = Vue.createApp({
     setup(context ) {
 
         /*########## startDialog ####*/
-        const startDialog = ref(false)
-        const instructions = ref(false)
+        const startDialog = ref(true)
+        const instructions = ref(true)
         /*########## startDialog ####*/
 
         const dragging = ref(false)
