@@ -137,6 +137,7 @@ body {
   align-items: center;
   position: relative;
   flex-direction: column;
+  font-size: 1.2rem;
 }
 .popup .popupContent > div {
   padding: 10px;
