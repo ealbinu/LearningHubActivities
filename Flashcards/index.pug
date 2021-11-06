@@ -43,9 +43,9 @@ html(lang="es")
                     enter-active-class="animate__animated  animate__flipInY"
                     leave-active-class="animate__animated animate__flipOutY"
                     )
-                    .front(v-if="isfront"): div(ref="cardFront") {{fronttext}}
-                    .back(v-if="!isfront"): div(ref="cardBack") {{backtext}}
-                button(@click="flip").button.button-plain.button-border.button-circle.animate__animated.animate__heartBeat: span.material-icons swap_horizontal_circle
+                    .front(v-if="isfront"): div(ref="cardFront" :class="'len_'+(Math.round(fronttext.length/50))") {{fronttext}}
+                    .back(v-if="!isfront"): div(ref="cardBack" :class="'len_'+(Math.round(backtext.length/50))") {{backtext}}
+                button(@click="flip").button.button-highlight.button-circle.animate__animated.animate__heartBeat.button-glow: span.material-icons swap_horizontal_circle
         script(type="text/x-template" id="dialog")
             .lhDialog
                 transition(

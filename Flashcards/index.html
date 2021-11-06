@@ -34,13 +34,13 @@
       <div class="flipcard" :class="active?'active animate__animated animate__zoomIn':'notactive'" @click="$emit('clicked')">
         <transition-group tag="div" enter-active-class="animate__animated  animate__flipInY" leave-active-class="animate__animated animate__flipOutY">
           <div class="front" v-if="isfront">
-            <div ref="cardFront">{{fronttext}}</div>
+            <div ref="cardFront" :class="'len_'+(Math.round(fronttext.length/50))">{{fronttext}}</div>
           </div>
           <div class="back" v-if="!isfront">
-            <div ref="cardBack">{{backtext}}</div>
+            <div ref="cardBack" :class="'len_'+(Math.round(backtext.length/50))">{{backtext}}</div>
           </div>
         </transition-group>
-        <button class="button button-plain button-border button-circle animate__animated animate__heartBeat" @click="flip"><span class="material-icons">swap_horizontal_circle</span></button>
+        <button class="button button-highlight button-circle animate__animated animate__heartBeat button-glow" @click="flip"><span class="material-icons">swap_horizontal_circle</span></button>
       </div>
     </script>
     <script type="text/x-template" id="dialog">

@@ -24,28 +24,28 @@ const app = Vue.createApp({
         const cards = ref([
             {
                 view: 'front',
-                front: '¿Con que otro nombre se le conoce a la 4ta revolución industrial?',
+                front: '¿Con qué otro nombre se le conoce a la 4ta revolución industrial?',
                 back: 'Industria 4.0'
             },
             {
                 view: 'front',
-                front: 'Son grandes transformaciones sociales debidas a los avances en tecnología, fruto de descubrimientos importantes en el desarrollo científico de la humanidad que impactan directamente en la forma de trabajar de los seres humanos',
+                front: 'Son grandes transformaciones sociales debidas a los avances en tecnología, fruto de descubrimientos importantes en el desarrollo científico de la humanidad que impactan directamente en la forma de trabajar de los seres humanos.',
                 back: 'Revoluciones industriales',
             },
             {
                 view: 'front',
-                front: 'En que siglo aconteció la primera revolución industrial, la cual se dió gracias a la mecanización y a la introducción de maquinas de vapor',
+                front: '¿En qué siglo aconteció la primera revolución industrial, la cual se dió gracias a la mecanización y a la introducción de máquinas de vapor?',
                 back: 'Siglo XVIII',
             },
             {
                 view: 'front',
-                front: 'Esta revolución industrial se vió marcada por el inicio de la producción en masa, el montaje y la electricidad  y sucedió en el siglo XIX ',
-                back: '2da revolución Indistrial ',
+                front: 'Esta revolución industrial se vió marcada por el inicio de la producción en masa, el montaje y la electricidad y sucedió en el siglo XIX.',
+                back: '2da Revolución Industrial',
             },
             {
                 view: 'front',
-                front: '¿Que cambio en la industria marcó el inicio de la tercera revolución industrial?',
-                back: 'La automatización en las empresas y la introducción de las tecnologías de información y comunicación (TIC’S)',
+                front: '¿Qué cambio en la industria marcó el inicio de la tercera revolución industrial?',
+                back: "La automatización en las empresas y la introducción de las tecnologías de información y comunicación (TIC 'S).",
             },
             {
                 view: 'front',
@@ -54,7 +54,7 @@ const app = Vue.createApp({
             },
             {
                 view: 'front',
-                front: '¿Cuáles son algunas de las tecnologías más representativas que hacen posible la transformación hacia las industrias 4.0?',
+                front: '¿Cuáles son algunas de las tecnologías más representativas que hacen posible la transformación hacia las industrias 4.0 ?',
                 back: 'Internet de las cosas, ciberseguridad, big data, sensores digitales, programación, impresión 3D, cloud computing, inteligencia artificial.',
             },
         ])
