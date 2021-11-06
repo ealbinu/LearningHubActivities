@@ -334,6 +334,20 @@
 		"oAP": "\/recapitulacion\/app\/change.mp3",
 		"oF": 0
 		},
+	"\/recapitulacion\/app\/enter.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/recapitulacion\/app\/enter.mp3",
+		"oF": 0
+		},
+	"\/recapitulacion\/app\/exit.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/recapitulacion\/app\/exit.mp3",
+		"oF": 0
+		},
 	"\/recapitulacion\/app\/flip.mp3": {
 		"cB": 0,
 		"ft": 8192,
@@ -356,6 +370,39 @@
 		"iS": 110920,
 		"oA": 0,
 		"oAP": "\/recapitulacion\/app\/img\/learninghub.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/recapitulacion\/app\/img\/toijugando-horizontal.png": {
+		"ft": 32768,
+		"iS": 22072,
+		"oA": 0,
+		"oAP": "\/recapitulacion\/app\/img\/toijugando-horizontal.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/recapitulacion\/app\/img\/toijugando-ico.png": {
+		"ft": 32768,
+		"iS": 46720,
+		"oA": 0,
+		"oAP": "\/recapitulacion\/app\/img\/toijugando-ico.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/recapitulacion\/app\/img\/toijugando-vertical.png": {
+		"ft": 32768,
+		"iS": 44513,
+		"oA": 0,
+		"oAP": "\/recapitulacion\/app\/img\/toijugando-vertical.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
