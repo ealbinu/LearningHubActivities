@@ -1,0 +1,60 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/css/buttons.min.css")
+        link(rel="stylesheet", href="app/app.css")
+
+        title 4ta revolución industrial
+    body
+        #app
+            dialogo(v-slot="props" v-if="startDialog" @close="startDialog=false")
+                img(src="app/img/learninghub.png", alt="Learning Hub")
+                button(@click="props.close").button.button-glow.button-highlight.button-pill.button-large Iniciar
+            #container
+                .row
+                    template(v-for="(i, index) in cards")
+                        flipcard(:fronttext="i.front" :backtext="i.back" :active="slide==index")
+                .navigation
+                    button(@click="prevSlide" :disabled="slide==0").button.button-highlight.button-border.button-pill.button-small.button-glow
+                        span.material-icons arrow_back
+                        | Atrás
+                    button(@click="nextSlide" :disabled="slide==cards.length-1").button.button-highlight.button-border.button-pill.button-small.button-glow
+                        span.material-icons arrow_forward
+                        | Adelante
+
+
+
+
+
+
+        script(type="text/x-template" id="flipcard")
+            .flipcard(:class="active?'active animate__animated animate__zoomIn':'notactive'" @click="$emit('clicked')")
+                transition-group(
+                    tag="div"
+                    enter-active-class="animate__animated  animate__flipInY"
+                    leave-active-class="animate__animated animate__flipOutY"
+                    )
+                    .front(v-if="isfront"): div(ref="cardFront" :class="'len_'+(Math.round(fronttext.length/50))") {{fronttext}}
+                    .back(v-if="!isfront"): div(ref="cardBack" :class="'len_'+(Math.round(backtext.length/50))") {{backtext}}
+                button(@click="flip").button.button-highlight.button-circle.animate__animated.animate__heartBeat.button-glow: span.material-icons swap_horizontal_circle
+        script(type="text/x-template" id="dialog")
+            .lhDialog
+                transition(
+                    leave-active-class="animate__animated animate__zoomOut animate__slow"
+                    @after-leave="$emit('close')"
+                    )
+                    .lhDialogContent(v-if="dialogContent")
+                        slot(v-bind:close="closeDialog")
+            
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        script(src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js")
+        script(src="app/app.js")

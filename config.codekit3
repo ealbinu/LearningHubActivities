@@ -16,44 +16,44 @@
 		"oAP": "\/.gitattributes",
 		"oF": 0
 		},
-	"\/DragDrop\/app\/app-min.js": {
+	"\/4tarevolucion\/app\/app-min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/DragDrop\/app\/app-min-min.js",
+		"oAP": "\/4tarevolucion\/app\/app-min-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
 		},
-	"\/DragDrop\/app\/app.css": {
+	"\/4tarevolucion\/app\/app.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/DragDrop\/app\/app-min.css",
+		"oAP": "\/4tarevolucion\/app\/app-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/DragDrop\/app\/app.css.map": {
+	"\/4tarevolucion\/app\/app.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/DragDrop\/app\/app.css.map",
+		"oAP": "\/4tarevolucion\/app\/app.css.map",
 		"oF": 0
 		},
-	"\/DragDrop\/app\/app.js": {
+	"\/4tarevolucion\/app\/app.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 1,
-		"oAP": "\/DragDrop\/app\/app-min.js",
+		"oA": 0,
+		"oAP": "\/4tarevolucion\/app\/app-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
 		},
-	"\/DragDrop\/app\/app.less": {
+	"\/4tarevolucion\/app\/app.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
@@ -62,7 +62,7 @@
 		"iI": 0,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/DragDrop\/app\/app.css",
+		"oAP": "\/4tarevolucion\/app\/app.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -70,142 +70,247 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/DragDrop\/app\/change.mp3": {
+	"\/4tarevolucion\/app\/change.mp3": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/DragDrop\/app\/change.mp3",
+		"oAP": "\/4tarevolucion\/app\/change.mp3",
 		"oF": 0
 		},
-	"\/DragDrop\/app\/enter.mp3": {
+	"\/4tarevolucion\/app\/flip.mp3": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/DragDrop\/app\/enter.mp3",
+		"oAP": "\/4tarevolucion\/app\/flip.mp3",
 		"oF": 0
 		},
-	"\/DragDrop\/app\/exit.mp3": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/DragDrop\/app\/exit.mp3",
-		"oF": 0
-		},
-	"\/DragDrop\/app\/img\/connections.svg": {
+	"\/4tarevolucion\/app\/img\/connections.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/DragDrop\/app\/img\/connections.svg",
+		"oAP": "\/4tarevolucion\/app\/img\/connections.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/DragDrop\/app\/img\/learninghub.png": {
+	"\/4tarevolucion\/app\/img\/learninghub.png": {
 		"ft": 32768,
 		"iS": 110920,
 		"oA": 0,
-		"oAP": "\/DragDrop\/app\/img\/learninghub.png",
+		"oAP": "\/4tarevolucion\/app\/img\/learninghub.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/DragDrop\/app\/img\/toijugando-horizontal.png": {
+	"\/4tarevolucion\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/4tarevolucion\/index.html",
+		"oF": 0
+		},
+	"\/4tarevolucion\/index.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/4tarevolucion\/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/cambios\/app\/app-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/cambios\/app\/app-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/cambios\/app\/app.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/cambios\/app\/app-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/cambios\/app\/app.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/cambios\/app\/app.css.map",
+		"oF": 0
+		},
+	"\/cambios\/app\/app.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/cambios\/app\/app-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/cambios\/app\/app.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/cambios\/app\/app.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/cambios\/app\/change.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/cambios\/app\/change.mp3",
+		"oF": 0
+		},
+	"\/cambios\/app\/enter.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/cambios\/app\/enter.mp3",
+		"oF": 0
+		},
+	"\/cambios\/app\/exit.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/cambios\/app\/exit.mp3",
+		"oF": 0
+		},
+	"\/cambios\/app\/img\/connections.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/cambios\/app\/img\/connections.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/cambios\/app\/img\/learninghub.png": {
+		"ft": 32768,
+		"iS": 110920,
+		"oA": 0,
+		"oAP": "\/cambios\/app\/img\/learninghub.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/cambios\/app\/img\/toijugando-horizontal.png": {
 		"ft": 32768,
 		"iS": 22072,
 		"oA": 0,
-		"oAP": "\/DragDrop\/app\/img\/toijugando-horizontal.png",
+		"oAP": "\/cambios\/app\/img\/toijugando-horizontal.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/DragDrop\/app\/img\/toijugando-ico.png": {
+	"\/cambios\/app\/img\/toijugando-ico.png": {
 		"ft": 32768,
 		"iS": 46720,
 		"oA": 0,
-		"oAP": "\/DragDrop\/app\/img\/toijugando-ico.png",
+		"oAP": "\/cambios\/app\/img\/toijugando-ico.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/DragDrop\/app\/img\/toijugando-vertical.png": {
+	"\/cambios\/app\/img\/toijugando-vertical.png": {
 		"ft": 32768,
 		"iS": 44513,
 		"oA": 0,
-		"oAP": "\/DragDrop\/app\/img\/toijugando-vertical.png",
+		"oAP": "\/cambios\/app\/img\/toijugando-vertical.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/DragDrop\/app\/win.mp3": {
+	"\/cambios\/app\/win.mp3": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/DragDrop\/app\/win.mp3",
+		"oAP": "\/cambios\/app\/win.mp3",
 		"oF": 0
 		},
-	"\/DragDrop\/index.html": {
+	"\/cambios\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/DragDrop\/index.html",
+		"oAP": "\/cambios\/index.html",
 		"oF": 0
 		},
-	"\/DragDrop\/index.pug": {
+	"\/cambios\/index.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/DragDrop\/index.html",
+		"oAP": "\/cambios\/index.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/Flashcards\/app\/app-min.js": {
+	"\/recapitulacion\/app\/app-min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/Flashcards\/app\/app-min-min.js",
+		"oAP": "\/recapitulacion\/app\/app-min-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
 		},
-	"\/Flashcards\/app\/app.css": {
+	"\/recapitulacion\/app\/app.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/Flashcards\/app\/app-min.css",
+		"oAP": "\/recapitulacion\/app\/app-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/Flashcards\/app\/app.css.map": {
+	"\/recapitulacion\/app\/app.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/Flashcards\/app\/app.css.map",
+		"oAP": "\/recapitulacion\/app\/app.css.map",
 		"oF": 0
 		},
-	"\/Flashcards\/app\/app.js": {
+	"\/recapitulacion\/app\/app.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 0,
-		"oAP": "\/Flashcards\/app\/app-min.js",
+		"oA": 1,
+		"oAP": "\/recapitulacion\/app\/app-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
 		},
-	"\/Flashcards\/app\/app.less": {
+	"\/recapitulacion\/app\/app.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
@@ -214,7 +319,7 @@
 		"iI": 0,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/Flashcards\/app\/app.css",
+		"oAP": "\/recapitulacion\/app\/app.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -222,95 +327,95 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/Flashcards\/app\/change.mp3": {
+	"\/recapitulacion\/app\/change.mp3": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/Flashcards\/app\/change.mp3",
+		"oAP": "\/recapitulacion\/app\/change.mp3",
 		"oF": 0
 		},
-	"\/Flashcards\/app\/flip.mp3": {
+	"\/recapitulacion\/app\/flip.mp3": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/Flashcards\/app\/flip.mp3",
+		"oAP": "\/recapitulacion\/app\/flip.mp3",
 		"oF": 0
 		},
-	"\/Flashcards\/app\/img\/connections.svg": {
+	"\/recapitulacion\/app\/img\/connections.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/Flashcards\/app\/img\/connections.svg",
+		"oAP": "\/recapitulacion\/app\/img\/connections.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/Flashcards\/app\/img\/learninghub.png": {
+	"\/recapitulacion\/app\/img\/learninghub.png": {
 		"ft": 32768,
 		"iS": 110920,
 		"oA": 0,
-		"oAP": "\/Flashcards\/app\/img\/learninghub.png",
+		"oAP": "\/recapitulacion\/app\/img\/learninghub.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/Flashcards\/index.html": {
+	"\/recapitulacion\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/Flashcards\/index.html",
+		"oAP": "\/recapitulacion\/index.html",
 		"oF": 0
 		},
-	"\/Flashcards\/index.pug": {
+	"\/recapitulacion\/index.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/Flashcards\/index.html",
+		"oAP": "\/recapitulacion\/index.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/PopUps\/app\/app-min.js": {
+	"\/semblanza\/app\/app-min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/PopUps\/app\/app-min-min.js",
+		"oAP": "\/semblanza\/app\/app-min-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
 		},
-	"\/PopUps\/app\/app.css": {
+	"\/semblanza\/app\/app.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/PopUps\/app\/app-min.css",
+		"oAP": "\/semblanza\/app\/app-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/PopUps\/app\/app.css.map": {
+	"\/semblanza\/app\/app.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/PopUps\/app\/app.css.map",
+		"oAP": "\/semblanza\/app\/app.css.map",
 		"oF": 0
 		},
-	"\/PopUps\/app\/app.js": {
+	"\/semblanza\/app\/app.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 1,
-		"oAP": "\/PopUps\/app\/app-min.js",
+		"oAP": "\/semblanza\/app\/app-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
 		},
-	"\/PopUps\/app\/app.less": {
+	"\/semblanza\/app\/app.less": {
 		"aP": 0,
 		"bl": 0,
 		"dJ": 0,
@@ -319,7 +424,7 @@
 		"iI": 0,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "\/PopUps\/app\/app.css",
+		"oAP": "\/semblanza\/app\/app.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
@@ -327,101 +432,101 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/PopUps\/app\/change.mp3": {
+	"\/semblanza\/app\/change.mp3": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/PopUps\/app\/change.mp3",
+		"oAP": "\/semblanza\/app\/change.mp3",
 		"oF": 0
 		},
-	"\/PopUps\/app\/enter.mp3": {
+	"\/semblanza\/app\/enter.mp3": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/PopUps\/app\/enter.mp3",
+		"oAP": "\/semblanza\/app\/enter.mp3",
 		"oF": 0
 		},
-	"\/PopUps\/app\/exit.mp3": {
+	"\/semblanza\/app\/exit.mp3": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/PopUps\/app\/exit.mp3",
+		"oAP": "\/semblanza\/app\/exit.mp3",
 		"oF": 0
 		},
-	"\/PopUps\/app\/flip.mp3": {
+	"\/semblanza\/app\/flip.mp3": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/PopUps\/app\/flip.mp3",
+		"oAP": "\/semblanza\/app\/flip.mp3",
 		"oF": 0
 		},
-	"\/PopUps\/app\/img\/connections.svg": {
+	"\/semblanza\/app\/img\/connections.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/PopUps\/app\/img\/connections.svg",
+		"oAP": "\/semblanza\/app\/img\/connections.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/PopUps\/app\/img\/learninghub.png": {
+	"\/semblanza\/app\/img\/learninghub.png": {
 		"ft": 32768,
 		"iS": 110920,
 		"oA": 0,
-		"oAP": "\/PopUps\/app\/img\/learninghub.png",
+		"oAP": "\/semblanza\/app\/img\/learninghub.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/PopUps\/app\/img\/toijugando-horizontal.png": {
+	"\/semblanza\/app\/img\/toijugando-horizontal.png": {
 		"ft": 32768,
 		"iS": 367686,
 		"oA": 0,
-		"oAP": "\/PopUps\/app\/img\/toijugando-horizontal.png",
+		"oAP": "\/semblanza\/app\/img\/toijugando-horizontal.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/PopUps\/app\/img\/toijugando-ico.png": {
+	"\/semblanza\/app\/img\/toijugando-ico.png": {
 		"ft": 32768,
 		"iS": 176656,
 		"oA": 0,
-		"oAP": "\/PopUps\/app\/img\/toijugando-ico.png",
+		"oAP": "\/semblanza\/app\/img\/toijugando-ico.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/PopUps\/app\/img\/toijugando-vertical.png": {
+	"\/semblanza\/app\/img\/toijugando-vertical.png": {
 		"ft": 32768,
 		"iS": 241932,
 		"oA": 0,
-		"oAP": "\/PopUps\/app\/img\/toijugando-vertical.png",
+		"oAP": "\/semblanza\/app\/img\/toijugando-vertical.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/PopUps\/index.html": {
+	"\/semblanza\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/PopUps\/index.html",
+		"oAP": "\/semblanza\/index.html",
 		"oF": 0
 		},
-	"\/PopUps\/index.pug": {
+	"\/semblanza\/index.pug": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/PopUps\/index.html",
+		"oAP": "\/semblanza\/index.html",
 		"oF": 0,
 		"oS": 0
 		}
