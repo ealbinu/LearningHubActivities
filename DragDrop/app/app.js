@@ -22,30 +22,30 @@ const app = Vue.createApp({
 
         
         const quest = ref([
-            {id:2, t:'La maquina de inyección de plástico se descompuso ya que una de las piezas se sobrecalentó y durante el tiempo que se tardaron en repararla se paró completamente la producción.'},
-            {id:1, t:'La materia prima que tenían en almacen no fue suficiente para la producción y el personal se dió cuenta muy tarde, lo cual retrasó la producción..'},
-            {id:3, t:'El gasto de energía electrica se elevó bastante durante los últimos 3 meses, lo cual causó falta de flujo en efectivo para resurtir materiales.'},
+            {id:0, t:'Durante el último mes el personal estaba llegando tarde, saliendo temprano y tomando más tiempo de lo debido para la comida lo que retrasó notablemente la producción.'},
+            {id:1, t:'La materia prima que tenían en almacén no fue suficiente para la producción y el personal se dió cuenta muy tarde, lo cual retrasó la producción.'},
+            {id:2, t:'La máquina de inyección de plástico se descompuso ya que una de las piezas se sobrecalienta y durante el tiempo que se tardaron en repararla se paró completamente la producción.'},
+            {id:3, t:'El gasto de energía eléctrica se elevó bastante durante los últimos 3 meses, lo cual causó falta de flujo en efectivo para re-surtir materiales.'},
             {id:4, t:'La camioneta en la que se repartían los juguetes sufrió una avería en el motor a la mitad del camino.'},
-            {id:0, t:'Durante el último mes el personal estuvo llegando tarde, saliendo temprano y tomando más tiempo de lo debido para la comida lo que retrasó notablemente la producción.'},
         ])
-        
-        
+
+
         const items = ref([
+            {id:1, t: 'Implementar un sistema de monitoreo de niveles de inventario mediante sensores y utilizar un sistema predictivo basado en datos de consumo para hacer solicitudes antes del desabasto.'},
             {id:0, t: 'Instalar control de acceso mediante reconocimiento facial o huella dactilar y enlazar la información a una base de datos que notifique las irregularidades en tiempo real.'},
-            {id:1, t: 'Implementar un sistema de monitoreo de niveles de inventario mediante sensores y utlizar un sistema predictivo basado en datos de consumo para hacer solictudes antes del desabasto.'},
-            {id:2, t: 'Utilizar sensores en las maquinas que arrojen información importante como temperatura o nivel de desgaste para controlar su uso y programar el mantenimiento preventivo.'},
             {id:3, t: 'Instalar luminaria conectada a internet que permita controlar y monitorear su uso, así como sensores de temperatura que permitan controlar y monitorear el uso de aires acondicionados.'},
+            {id:2, t: 'Utilizar sensores en las máquinas que arrojan información importante como temperatura o nivel de desgaste para controlar su uso y programar el mantenimiento preventivo.'},
             {id:4, t: 'Instalar sistema de control y seguimiento a la flotilla de automóviles para controlar el desgaste de autopartes, monitorear el uso de gasolina y rutas de manejo en tiempo real.'}
         ])
 
         
-        const hideInstructions = () => {
-            instructions.value = false
+        const startActivity = () => {
+            startDialog.value = false
             setTimeout(function () {
                 startDraggable()
             }, 500)
         }
-        //hideInstructions()
+
 
         const startDraggable = () => {
             
@@ -109,7 +109,7 @@ const app = Vue.createApp({
         return {
             startDialog,
             instructions,
-            hideInstructions,
+            startActivity,
             items,
             quest,
             move,

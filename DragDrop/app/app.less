@@ -52,8 +52,8 @@ body{
         max-width: 480px;
     }
     .lhDialogContent{
-        width: 80%;
-        height: 80%;
+        width: 98%;
+        height: 98%;
         background: #f0f0f0;
         background-image: url(img/connections.svg) !important;
         background-size: 140%;
@@ -71,13 +71,19 @@ body{
     }
     .descriptiontoi{
         img{
-            max-width: 280px;
+            max-width: 200px;
             
         }
         text-align: center;
+        p{
+            text-align: justify;
+            @media (max-width: 600px){
+                font-size: 0.8rem;
+            }
+        }
         background: #fff;
         padding: 10px 20px;
-        max-width: 480px;
+        max-width: 90%;
         margin-bottom: 10px;
         .roundize;
     }
@@ -96,6 +102,10 @@ body{
 }
 
 #container .row{
+    background: #f0f0f0;
+    background-image: url(img/connections.svg) !important;
+    background-size: 140%;
+    background-position: center;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -240,7 +250,8 @@ body{
         &.right{ right: 0; bottom: 0px;}
     }
     .quest{
-       width: 100%;
+        background: #fff;
+       width: 99%;
        display: flex;
        padding: 10px;
        box-sizing: border-box;

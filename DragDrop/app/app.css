@@ -52,8 +52,8 @@ body {
   max-width: 480px;
 }
 .lhDialog .lhDialogContent {
-  width: 80%;
-  height: 80%;
+  width: 98%;
+  height: 98%;
   background: #f0f0f0;
   background-image: url(img/connections.svg) !important;
   background-size: 140%;
@@ -72,13 +72,21 @@ body {
   text-align: center;
   background: #fff;
   padding: 10px 20px;
-  max-width: 480px;
+  max-width: 90%;
   margin-bottom: 10px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 #startDialog .descriptiontoi img {
-  max-width: 280px;
+  max-width: 200px;
+}
+#startDialog .descriptiontoi p {
+  text-align: justify;
+}
+@media (max-width: 600px) {
+  #startDialog .descriptiontoi p {
+    font-size: 0.8rem;
+  }
 }
 #container {
   width: 98%;
@@ -93,6 +101,10 @@ body {
   overflow: hidden;
 }
 #container .row {
+  background: #f0f0f0;
+  background-image: url(img/connections.svg) !important;
+  background-size: 140%;
+  background-position: center;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -233,7 +245,8 @@ body {
   bottom: 0px;
 }
 .questions .quest {
-  width: 100%;
+  background: #fff;
+  width: 99%;
   padding: 10px;
   box-sizing: border-box;
   position: absolute;

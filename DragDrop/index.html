@@ -17,22 +17,15 @@
   <body>
     <div id="app">
       <div id="startDialog">
-        <dialogo v-slot="props" v-if="startDialog" @close="startDialog=false"><img src="app/img/learninghub.png" alt="Learning Hub">
+        <dialogo v-slot="props" v-if="startDialog" @close="startActivity"><img class="logolh" src="app/img/learninghub.png" alt="Learning Hub">
+          <div class="descriptiontoi"><img src="app/img/toijugando-horizontal.png" alt="TOiJugando">
+            <p>El mes pasado llegó un pedido grande de juguetes para una feria importante de Michoacán a la empresa <strong>ToiJugando</strong>, después de varias dificultades en el proceso de producción y una entrega después de la fecha límite, tú asumiendo el rol de director general decidiste hacer un análisis de las problemáticas y posibles soluciones para eficientar procesos internos, pero sobre todo para tener más control en ciertos aspectos de la empresa utilizando tecnologías propias de la Industria 4.0. Arrastra la posible solución a la problemática correspondiente.</p>
+          </div>
           <button class="button button-glow button-highlight button-pill button-large" @click="props.close">Iniciar</button>
         </dialogo>
       </div>
       <div id="container">
-        <transition leave-active-class="animate__animated animate__lightSpeedOutLeft">
-          <div class="instructions" v-if="instructions">
-            <div class="text-center"><img class="logotj" src="app/img/toijugando-horizontal.png" alt="TOiJugando"></div>
-            <p>El mes pasado llegó un pedido grande de juguetes para una feria importante de Michoacan a la empresa <strong>ToiJugando</strong>, después de varias dificultades en el proceso de producción y una entrega después de la fecha límite, tú asumiendo el rol de director general decidiste hacer un análisis de las problematicas y posibles soluciones para eficiantar procesos internos, pero sobre todo para tener más control en ciertos aspectos de la empresa utilizando tecnologías propias de la <strong>Industria 4.0</strong>.</p>
-            <div class="text-center inst">
-              <p class="grey">Arrastra la posible solución a la problemática correspondiente.   </p>
-              <button class="button button-glow button-highlight button-rounded" @click="hideInstructions">Comenzar</button>
-            </div>
-          </div>
-        </transition>
-        <div class="row droparea" v-if="!instructions">
+        <div class="row droparea">
           <div class="questions" :class="oks==5?'end':''">
             <div class="text-center" v-if="oks==5"><img class="logotj" src="app/img/toijugando-horizontal.png" alt="Toi Jugando"></div>
             <div class="wrap">

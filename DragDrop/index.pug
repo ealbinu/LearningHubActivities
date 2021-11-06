@@ -20,27 +20,15 @@ html(lang="es")
     body
         #app
             #startDialog
-                dialogo(v-slot="props" v-if="startDialog" @close="startDialog=false")
-                    img(src="app/img/learninghub.png", alt="Learning Hub")
+                dialogo(v-slot="props" v-if="startDialog" @close="startActivity")
+                    img(src="app/img/learninghub.png", alt="Learning Hub").logolh
+                    .descriptiontoi
+                        img(src="app/img/toijugando-horizontal.png", alt="TOiJugando")
+                        p El mes pasado llegó un pedido grande de juguetes para una feria importante de Michoacán a la empresa #[strong ToiJugando], después de varias dificultades en el proceso de producción y una entrega después de la fecha límite, tú asumiendo el rol de director general decidiste hacer un análisis de las problemáticas y posibles soluciones para eficientar procesos internos, pero sobre todo para tener más control en ciertos aspectos de la empresa utilizando tecnologías propias de la Industria 4.0. Arrastra la posible solución a la problemática correspondiente.
                     button(@click="props.close").button.button-glow.button-highlight.button-pill.button-large Iniciar
             #container
 
-                transition(
-                    leave-active-class="animate__animated animate__lightSpeedOutLeft"
-                )
-                    .instructions(v-if="instructions")
-                        div.text-center: img(src="app/img/toijugando-horizontal.png", alt="TOiJugando").logotj
-                        p El mes pasado llegó un pedido grande de juguetes para una feria importante de Michoacan a la empresa #[strong ToiJugando], después de varias dificultades en el proceso de producción y una entrega después de la fecha límite, tú asumiendo el rol de director general decidiste hacer un análisis de las problematicas y posibles soluciones para eficiantar procesos internos, pero sobre todo para tener más control en ciertos aspectos de la empresa utilizando tecnologías propias de la #[strong Industria 4.0].
-                        
-                        .text-center.inst
-                            p.grey Arrastra la posible solución a la problemática correspondiente.   
-                            button(@click="hideInstructions").button.button-glow.button-highlight.button-rounded Comenzar
-
-
-
-
-
-                .row(v-if="!instructions").droparea
+                .row().droparea
 
                         .questions(:class="oks==5?'end':''")
                             .text-center(v-if="oks==5"): img(src="app/img/toijugando-horizontal.png", alt="Toi Jugando").logotj 
