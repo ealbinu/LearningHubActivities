@@ -12,37 +12,31 @@ const app = Vue.createApp({
         
         const cards = ref([false, false, false, false, false, false, false, false])
         
+        const videoplayer = ref()
+
+
+        const closeDialog = () => {
+
+            startDialog.value = false
+            videoplayer.value.play()
+            
+        }
 
         return {
             startDialog,
-            cards
+            closeDialog,
+            videoplayer
         }
     },
+    mounted (){
+        
+    }
 
 })
 
 
+//const player = new Plyr('#player')
 
-app.component('popup', {
-    props: ['button'],
-    data () {
-        return {
-            dialog: false,
-
-        }
-    },
-    methods: {
-        openDialog(){
-            this.dialog = true
-            enterSound.play()
-        },
-        closeDialog(){
-            this.dialog = false
-            exitSound.play()
-        }
-    },
-    template: '#popup'
-})
 
 app.component('dialogo', {
     data () {
