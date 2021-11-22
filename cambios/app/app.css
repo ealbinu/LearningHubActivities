@@ -65,6 +65,12 @@ body {
   align-items: center;
   flex-direction: column;
 }
+@media (min-width: 900px) {
+  .lhDialog .lhDialogContent {
+    width: 80%;
+    height: 80%;
+  }
+}
 #startDialog .logolh {
   max-width: 240px;
 }
